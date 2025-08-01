@@ -6,6 +6,11 @@
     --tertiary-color: #dcdcdc;
     --dark-color: #000000;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html{
     font-family: "Roboto Condensed", sans-serif;   
 }
@@ -14,17 +19,14 @@ html{
 
 body{
 
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     color: ghostwhite;   
 }
 
-main{
-    padding-top: 50px;
-}
 .btn{
     background-color: var(--secondary-color);
     color: var(--dark-color);
-    padding: 10px 20px;
+    padding: 5px 20px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -53,10 +55,9 @@ a{
 
 section{
     padding: 20px;
-    margin: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     /* remove later */
-    border: 2px solid var(--secondary-color); 
+    
 }
 section h1{
     font-size: 2em;
@@ -94,7 +95,7 @@ header{
 
 
 nav ul{
-    font-size: 12px;
+    font-size: 15px;
     list-style: none;
     display: flex;
     gap: 15px;
@@ -140,11 +141,12 @@ nav ul li a:hover{
 .hero{
     background-color: var(--primary-color);
     height: 100vh;
-    display: flex;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: var(--dark-color);
     border: none;
+    width: 100%;
+    margin: 0;
     
 }
 @media screen and (max-width: 768px){
@@ -180,6 +182,9 @@ nav ul li a:hover{
 .hero-text h2{
     font-size: 2.5em;
     margin-bottom: 0;
+}
+.hero-text p{
+    margin: 10px;
 }
 
 /* ABOUT SECTION */
@@ -255,6 +260,10 @@ nav ul li a:hover{
 }
 #projects h1{
     font-size: 2.5em;
+}
+#projects p{
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 #projects .project-card{
     background-color: var(--primary-color);
