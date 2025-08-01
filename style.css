@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #f7f7f7;
+    --secondary-color: #fdb936;
+    --tertiary-color: #dcdcdc;
+    --dark-color: #000000;
+}
+html{
+    font-family: "Roboto Condensed", sans-serif;   
+}
+
+/* UTILITY STYLINGS */
+
+body{
+
+    background-color: var(--primary-color);
+    color: ghostwhite;   
+}
+
+main{
+    padding-top: 50px;
+}
+.btn{
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+
+.title{
+    text-align: center;
+    width: 100%;
+    border: 3px dotted var(--secondary-color);
+    margin-bottom: 30px;
+}
+h1{
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+
+section{
+    padding: 50px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* remove later */
+    border: 2px solid var(--secondary-color); 
+}
+section h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--dark-color);
+    letter-spacing: 15px;
+}
+section h2{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+span{
+    color: var(--secondary-color);
+}
+section p{
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+
+/* HEADER SECTION */
+header{
+    position: fixed;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+nav ul{
+    font-size: 12px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(203, 201, 201, 0.5);
+    backdrop-filter: blur(10px);
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    width: 0%;
+}
+
+nav ul li a:hover{
+    width: 100%;
+    color: var(--secondary-color);
+    
+}
+
+/* nav ul li a::after{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: -5px;
+    width: 0%;
+    height: 5px;
+    background-color: blue;
+    transition: 0.4s;
+
+} */
+/* nav ul li a:hover::after{
+    width: 100%;   
+} */
+
+
+
+/* HERO SECTION */
+
+.hero{
+    background-color: var(--primary-color);
+    height: 100vh;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--dark-color);
+    
+}
+@media screen and (max-width: 768px){
+    .hero{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+}
+.hero .hero-image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+
+}
+
+.hero-image img{
+    width: 100%;
+    height: auto;  
+}
+.hero .hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.hero-text h2{
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+/* ABOUT SECTION */
+#about{
+    background-color: var(--tertiary-color);
+    color: var(--dark-color);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#about h1{
+    font-size: 2.5em;
+}
+#about h3{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+#about .about-me{
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* SKILL SECTION */
+#skills{
+    background-color: var(--tertiary-color);
+    color: var(--dark-color);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#skills h1{
+    font-size: 2.5em;
+}
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-container .skill-card{
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+/* PROJECT SECTION */
+#projects{
+    background-color: var(--tertiary-color);
+    color: var(--dark-color);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#projects h1{
+    font-size: 2.5em;
+}
+#projects .project-card{
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.btn-code{
+    color: var(--dark-color);
+    padding: 5px 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.btn-code:hover{
+    color: black;
+}
+
+/* CONTACT SECTION */
+#contact{
+    background-color: var(--tertiary-color);
+    color: var(--dark-color);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contact h1{
+    font-size: 2.5em;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    
+}
+#contact form label{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+#contact .form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+}
+#contact form input,
+#contact form textarea{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+textarea{
+    height: 100px;
+    resize: none;
+
+}
+#contact form button{
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+#contact form button:hover{
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+}
