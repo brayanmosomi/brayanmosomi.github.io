@@ -52,7 +52,7 @@ a{
 
 
 section{
-    padding: 50px;
+    padding: 20px;
     margin: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     /* remove later */
@@ -63,7 +63,7 @@ section h1{
     margin-bottom: 10px;
     text-align: center;
     color: var(--dark-color);
-    letter-spacing: 15px;
+    letter-spacing: 5px;
 }
 section h2{
     font-size: 1.5em;
@@ -144,6 +144,7 @@ nav ul li a:hover{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: var(--dark-color);
+    border: none;
     
 }
 @media screen and (max-width: 768px){
@@ -234,6 +235,11 @@ nav ul li a:hover{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+.skills-container .skill-card:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 
@@ -256,7 +262,15 @@ nav ul li a:hover{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    transition: 0.3s ease;
 }
+
+#projects .project-card:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
 
 .btn-code{
     color: var(--dark-color);
