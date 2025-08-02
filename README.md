@@ -56,7 +56,6 @@ Showcasing real projects I've worked on:
 
 - **HTML5**
 - **CSS3**
-- **Python (for backend logic in some projects)**
 - **Git & GitHub** for version control and hosting
 
 ---
